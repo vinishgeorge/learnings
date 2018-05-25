@@ -1,0 +1,12 @@
+forms
+1. template driven #signupform
+2. reactive
+
+validation status
+1. valid
+2. invalid
+3. prinstine
+4. dirty
+5. touched
+6. untocuhed
+
