@@ -1,0 +1,30 @@
+#### FIND TEXt IN PROCEDURES AND FUNCTIONS ##########----------
+
+SELECT 
+      * 
+FROM 
+      INFORMATION_SCHEMA.ROUTINES 
+WHERE 
+	  ROUTINE_SCHEMA ='neo_45_tr'
+AND
+	  ROUTINE_DEFINITION LIKE '%rar_day%'
+ORDER BY ROUTINE_NAME; 
+
+####******####################**************************************################
+        SHOW FULL TABLES IN neo_45_tr WHERE TABLE_TYPE LIKE 'FUNCTION';
+        
+################$$$$$$$$$$$$$$$$$$$##############################
+SELECT 
+    *
+FROM
+    INFORMATION_SCHEMA.VIEWS
+WHERE
+TABLE_SCHEMA='neo_45_tr'
+AND VIEW_DEFINITION like '%rar_day%'
+;
+
+#####################
+
+
+
+
