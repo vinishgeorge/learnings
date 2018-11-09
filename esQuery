@@ -1,0 +1,84 @@
+POST /neo-tr-index/activity/_search
+{
+  "query": {
+    "bool": {
+      "filter": {
+        "bool": {
+          "must": [
+            {
+              "bool": {
+                "should": [
+                  {
+                    "bool": {
+                      "must_not": [
+                        {
+                          "exists": {
+                            "field": "Inclusion.Age_Group"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "term": {
+                      "Inclusion.Age_Group": 81
+                    }
+                  }
+                ]
+              }
+            },{
+              "bool": {
+                "should": [
+                  {
+                    "bool": {
+                      "must_not": [
+                        {
+                          "exists": {
+                            "field": "Inclusion.Gender"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "term": {
+                      "Inclusion.Gender": "Male"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "must_not": [
+            {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "Exclusion.Age_Group": 81
+                    }
+                  },{
+                    "term": {
+                      "Exclusion.Age_Group": 82
+                    }
+                  }
+                ]
+              }
+            }, {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "Exclusion.Gender": "Male"
+                    }
+                  }
+                ]
+              }
+            }
+            
+          ]
+        }
+      }
+    }
+  }
+}
