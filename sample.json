@@ -1,0 +1,118 @@
+[
+{
+  "Activity_id": 1,
+  "Service_Activity": "Good Tenant",
+  "CRC_Provider": "Merseyside",
+  "Organisation_ID": "1",
+  "Flex_Team_Association": [
+    "Team 1",
+    "Team 5",
+    "Team 10"
+  ],
+  "Primary_Pathway": "Accommodation",
+  "Secondary_Pathway": "Physical & Emotional Well-Being",
+  "Inclusion": {
+    "Age_Group": [
+      {
+        "Min": 40,
+        "Max": 80
+      },
+      {
+        "Min": 82,
+        "Max": 85
+      }
+    ],
+    "Disability": [
+      "Learning Disability",
+      "No Disability",
+      "Learning Difficulties"
+    ],
+    "Gender": [
+      "Male",
+      "Female"
+    ],
+    "Gender_Reassignments": [
+      "No"
+    ],
+    "Ethnicity": [],
+    "Marriage": [],
+    "Religion": [],
+    "Sexual_Orientation": []
+  },
+  "Exclusion": {
+    "Ethnicity": [
+      "Asian or Asian British: Pakistani"
+    ],
+    "Sexual_Orientation": [
+      "Bisexual"
+    ],
+    "Marriage": [
+      "Single"
+    ]
+  }
+}
+,
+{
+"Activity_id":2,
+"Service_Activity":"CV Writing",
+"CRC_Provider":"Merseyside",
+"Organisation_ID":"1",
+"Flex_Team_Association":["Team 1","Team 5", "Team 10"],
+"Primary_Pathway":"Accommodation",
+"Secondary_Pathway":"Physical & Emotional Well-Being",
+"Inclusion":{
+"Age_Group":[{"Min":20,"Max":40}],
+"Disability":["Learning Disability","No Disability","Learning Difficulties"],
+"Gender":["Male","Female"],
+"Gender_Reassignments":["Prefer Not To Say","No"],
+"Ethnicity":["Asian or Asian British: Indian","Asian or Asian British: Pakistani","Black or Black British: African"],
+"Religion":["Church of Sweden","Bahai"],
+"Marriage":["Married","Single","Divorced"]
+},
+"Exclusion":{
+"Sexual_Orientation":["Bisexual"]
+}
+},
+{
+"Activity_id":3,
+"Service_Activity":"Cleaning Services",
+"CRC_Provider":"Cheshire",
+"Organisation_ID":"1",
+"Flex_Team_Association":["Team 1","Team 5", "Team 10"],
+"Primary_Pathway":"Accommodation",
+"Secondary_Pathway":"Physical & Emotional Well-Being",
+"Inclusion":{
+"Age_Group":[{"Min":10,"Max":20}],
+"Disability":["Learning Disability","No Disability","Learning Difficulties"],
+"Gender_Reassignments":["Prefer Not To Say","No"],
+"Ethnicity":["Asian or Asian British: Indian","Asian or Asian British: Pakistani","Black or Black British: African"],
+"Religion":["Church of Sweden","Bahai"],
+"Sexual_Orientation":["Bisexual"]
+
+},
+"Exclusion":{
+"Gender":["Male"]
+}
+}
+,{
+"Activity_id":4,
+"Service_Activity":"Home Loan",
+"CRC_Provider":"Merseyside",
+"Organisation_ID":"1",
+"Flex_Team_Association":["Team 1","Team 5", "Team 10"],
+"Primary_Pathway":"Education",
+"Secondary_Pathway":"Finance",
+"Inclusion":{
+"Age_Group":[{"Min":20,"Max":40}],
+"Disability":["Learning Disability","No Disability","Learning Difficulties"],
+"Gender":["Male","Female"],
+"Gender_Reassignments":["Prefer Not To Say","No"],
+"Ethnicity":["Asian or Asian British: Indian","Asian or Asian British: Pakistani","Black or Black British: African"],
+"Religion":["Church of Sweden","Bahai"],
+"Marriage":["Married","Single","Divorced"]
+},
+"Exclusion":{
+"Sexual_Orientation":["Bisexual"]
+}
+}
+]
