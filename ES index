@@ -1,0 +1,104 @@
+PUT neo-tr-index
+{
+  "mappings": {
+    "activity": {
+      "properties": {
+        "Activity_id": {
+          "type": "long"
+        },
+        "CRC_Provider": {
+          "type": "text"
+        },
+        "Flex_Team_Association": {
+          "type": "text"
+        },
+        "Exclusion": {
+          "type": "object",
+          "properties": {
+            "Age_Group": {
+              "type": "nested",
+              "properties": {
+                "Max": {
+                  "type": "long"
+                },
+                "Min": {
+                  "type": "long"
+                }
+              }
+            },
+            "Disability": {
+              "type": "text"
+            },
+            "Ethnicity": {
+              "type": "text"
+            },
+            "Gender": {
+              "type": "text"
+            },
+            "Gender_Reassignments": {
+              "type": "text"
+            },
+            "Marriage": {
+              "type": "text"
+            },
+            "Religion": {
+              "type": "text"
+            },
+            "Sexual_Orientation": {
+              "type": "text"
+            }
+          }
+        },
+        "Inclusion": {
+          "type": "object",
+          "properties": {
+            "Age_Group": {
+              "type": "nested",
+              "properties": {
+                "Max": {
+                  "type": "long"
+                },
+                "Min": {
+                  "type": "long"
+                }
+              }
+            },
+            "Disability": {
+              "type": "text"
+            },
+            "Ethnicity": {
+              "type": "text"
+            },
+            "Gender": {
+              "type": "text"
+            },
+            "Gender_Reassignments": {
+              "type": "text"
+            },
+            "Marriage": {
+              "type": "text"
+            },
+            "Religion": {
+              "type": "text"
+            },
+            "Sexual_Orientation": {
+              "type": "text"
+            }
+          }
+        },
+        "Organisation_ID": {
+          "type": "text"
+        },
+        "Primary_Pathway": {
+          "type": "text"
+        },
+        "Secondary_Pathway": {
+          "type": "text"
+        },
+        "Service_Activity": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
