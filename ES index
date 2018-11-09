@@ -7,45 +7,46 @@ PUT neo-tr-index
           "type": "long"
         },
         "CRC_Provider": {
-          "type": "text"
+          "type": "keyword",
+          "null_value": "NULL"
         },
         "Flex_Team_Association": {
-          "type": "text"
+          "type": "keyword",
+          "null_value": "NULL"
         },
         "Exclusion": {
           "type": "object",
           "properties": {
             "Age_Group": {
-              "type": "nested",
-              "properties": {
-                "Max": {
-                  "type": "long"
-                },
-                "Min": {
-                  "type": "long"
-                }
-              }
+              "type": "integer_range"
             },
             "Disability": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Ethnicity": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Gender": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Gender_Reassignments": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Marriage": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Religion": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Sexual_Orientation": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             }
           }
         },
@@ -53,50 +54,53 @@ PUT neo-tr-index
           "type": "object",
           "properties": {
             "Age_Group": {
-              "type": "nested",
-              "properties": {
-                "Max": {
-                  "type": "long"
-                },
-                "Min": {
-                  "type": "long"
-                }
-              }
+              "type": "integer_range"
             },
             "Disability": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Ethnicity": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Gender": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Gender_Reassignments": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Marriage": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Religion": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             },
             "Sexual_Orientation": {
-              "type": "text"
+              "type": "keyword",
+              "null_value": "NULL"
             }
           }
         },
         "Organisation_ID": {
-          "type": "text"
+          "type": "keyword",
+          "null_value": "NULL"
         },
         "Primary_Pathway": {
-          "type": "text"
+          "type": "keyword",
+          "null_value": "NULL"
         },
         "Secondary_Pathway": {
-          "type": "text"
+          "type": "keyword",
+          "null_value": "NULL"
         },
         "Service_Activity": {
-          "type": "text"
+          "type": "keyword",
+          "null_value": "NULL"
         }
       }
     }
