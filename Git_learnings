@@ -1,0 +1,8 @@
+how git pull works?
+git pull--> step 1  git fetch --> step 2 git merge
+
+how git pull --rebase work ?
+git pull --> 
+
+https://www.atlassian.com/git/tutorials/syncing/git-pull
+https://dev.to/dhanushkadev/git-rebase-vs-merge-13e8
